@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Villa-pisani : " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Villa-pisani</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/xanderwallace/Villa-Pisani">View on GitHub</a>
+
+          <h1 id="project_title">Villa-pisani</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/xanderwallace/Villa-Pisani/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/xanderwallace/Villa-Pisani/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Villa Pisani</h1>
+
+<p>It was designed by Andrea Palladio about 1552, for Cardinal Francesco Pisani. Unlike more typical Palladian villas — and their imitations in Britain, Germany and the United States — the Villa Pisani at Montagnana combines an urban front, facing a piazza of the comune, and, on the other side, a rural frontage extending into gardens, with an agricultural setting beyond. 
+Unlike many of Palladio's villas in purely rural settings, it has an upper storey, set apart from more public reception rooms on the main floor; twin suites of apartments are accessed by twin oval staircases that flank the central recess on the garden side. On the exterior, little differentiation between floors is made: there is no obviously visible piano nobile. On the garden front, access to the park is from the central recessed portico only; a balustrade above a deep ditch keeps out informal wanderers. Construction of the villa was under way by September 1553, and it was complete in 1555. 
+<em>In 1996 UNESCO included the Villa Pisani in the World Heritage Site "City of Vicenza and the Palladian Villas of the Veneto". The villa continues to be in private ownership.</em></p>
+
+<h2>Architectural details</h2>
+
+<p>The central block is an uncompromising rectangle, with a pedimented tetrastyle portico, Ionic over Doric, that has been sunk into its wall-plane so that the columns are embedded half-columns. On the garden front, the similar structure instead forms a screen across the fronts of a recessed portico surmounted by a loggia, which become in single recessed central feature. The Doric frieze runs uninterrupted round the building, further binding all elements together. There are no surviving autograph drawings related to this project. However, Palladio published a version of the building in his <em>I Quattro Libri dell'Architettura</em>. 
+The following pictures show an idealized, amplified form of the villa, in which the central block is flanked by arched gateway structures that end in tall, three-storey tower-like pavilions.</p>
+
+<p><img src="https://github.com/xanderwallace/Villa-Pisani/raw/master/photos/original.jpg" alt="Original_project"><em>plan of original project (Ottavio Bertotti Scamozzi, 1778)</em>
+<img src="https://github.com/xanderwallace/Villa-Pisani/raw/master/photos/original2.jpg" alt="Original_project"><em>view of original project</em></p>
+
+<h2>The Model of Villa Pisani</h2>
+
+<p>The model creation is divided into following steps:</p>
+
+<ul>
+<li>basement</li>
+<li>first floor</li>
+<li>first ceiling</li>
+<li>second floor</li>
+<li>second ceiling</li>
+<li>roof</li>
+<li>decoration</li>
+</ul><p>We' ll see like the creation pass from simple 3D-shapes, with  <strong>SIMPLEX_GRID</strong> or <strong>CUBOID</strong> or <strong>CYLINDRICAL_SURFACE</strong> primitive, to complex surface and 3D-objects, with <strong>BEZIER</strong> and <strong>HERMITE</strong> function.
+Moreover the affine transformations <strong>TRANSLATE</strong>, <strong>SCALE</strong> and <strong>ROTATE</strong> were used for the building and the placement.
+Now, for the model we use approximate sizes and different colors.</p>
+
+<h3>The Basement</h3>
+
+<p>This is the lowest element of the structure. It' s composed of 3 main elements: 2 stairways (for main and secondary entrance) and the base. In this step, 2 function are implemented to create the stairway.</p>
+
+<p><img src="https://github.com/xanderwallace/Villa-Pisani/raw/master/photos/Basement.png" alt="Project"><em>view of basement</em></p>
+
+<h3>First Floor</h3>
+
+<p>The structure of this part is the skeleton of the first floor, and so is a STRUCT of walls made with combination of SIMPLEX_GRID shape.</p>
+
+<p><img src="https://github.com/xanderwallace/Villa-Pisani/raw/master/photos/First%20Floor%20-%20Basement.png" alt="Project"><em>view of first floor</em>
+<img src="https://github.com/xanderwallace/Villa-Pisani/raw/master/photos/First%20Floor.png" alt="Project"><em>view of first floor and basement</em></p>
+
+<h3>First Ceiling</h3>
+
+<p>In this step, using CUBOID and CYLINDRICAL_SURFACE, it was possible to create the ceiling of first floor.</p>
+
+<p><img src="https://github.com/xanderwallace/Villa-Pisani/raw/master/photos/First%20Ceiling.png" alt="Project"><em>view of first ceiling</em>
+<img src="https://github.com/xanderwallace/Villa-Pisani/raw/master/photos/First%20Ceiling%20-%20First%20Floor%20-%20Basement.png" alt="Project"><em>view of first ceiling, first floor and basement</em></p>
+
+<h3>Second Floor</h3>
+
+<p><img src="https://github.com/xanderwallace/Villa-Pisani/raw/master/photos/Second%20Floor.png" alt="Project"><em>view of second floor</em>
+<img src="https://github.com/xanderwallace/Villa-Pisani/raw/master/photos/Second%20Floor%20-%20First%20Ceiling%20-%20First%20Floor%20-%20Basement.png" alt="Project"><em>view of second floor, first Ceiling, first floor and basement</em></p>
+
+<h3>Second Ceiling</h3>
+
+<p><img src="https://github.com/xanderwallace/Villa-Pisani/raw/master/photos/Soffitto%20-%20Timpano.png" alt="Project"><em>view of component of the ceiling</em>
+<img src="https://github.com/xanderwallace/Villa-Pisani/raw/master/photos/Second%20Ceiling.png" alt="Project"><em>view of second ceiling</em>
+<img src="https://github.com/xanderwallace/Villa-Pisani/raw/master/photos/Second%20Ceiling%20-%20Second%20Floor%20-%20First%20Ceiling%20-%20First%20Floor%20-%20Basement.png" alt="Project"><em>view of second ceiling, second floor, first Ceiling, first floor and basement</em></p>
+
+<h3>Roof</h3>
+
+<p><img src="https://github.com/xanderwallace/Villa-Pisani/raw/master/photos/Roof.png" alt="Project"><em>view of the roof</em>
+<img src="https://github.com/xanderwallace/Villa-Pisani/raw/master/photos/Roof%20-%20Second%20Ceiling%20-%20Second%20Floor%20-%20First%20Ceiling%20-%20First%20Floor%20-%20Basement.png" alt="Project"><em>view of roof, second ceiling, second floor, first Ceiling, first floor and basement</em></p>
+
+<h3>Decoration</h3>
+
+<p>These are the decorations created with Bezier and Hermite function and used in this model</p>
+
+<p><img src="https://github.com/xanderwallace/Villa-Pisani/raw/master/photos/Ornamenti.png" alt="Project"><em>decorations</em></p>
+
+<h2>Final Result</h2>
+
+<p>In the end, the screenshoots inserted below shows the final resul</p>
+
+<p><img src="https://github.com/xanderwallace/Villa-Pisani/raw/master/photos/Final%20Project%20-%20frontal.png" alt="Project"><em>frontal view</em>
+<img src="https://github.com/xanderwallace/Villa-Pisani/raw/master/photos/Final%20Project%20-%20sud_ovest.png" alt="Project"><em>lateral view</em>
+<img src="https://github.com/xanderwallace/Villa-Pisani/raw/master/photos/Final%20Project%20-%20retro.png" alt="Project"><em>back view</em></p>
+
+<p>Source code is hosted <a href="https://raw.github.com/cvdlab-cg/443686/master/final_project/final-project.js">here</a></p>
+
+<h2>References</h2>
+
+<p>Some resources in this site are taken from the web sites listed below and rights belong to their respective owners.
+<a href="http://it.wikipedia.org/wiki/Villa_Pisani_(Montagnana">http://it.wikipedia.org/wiki/Villa<em>Pisani</em>(Montagnana)</a>)</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Villa-pisani maintained by <a href="https://github.com/xanderwallace">xanderwallace</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
